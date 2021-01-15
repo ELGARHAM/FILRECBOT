@@ -19,7 +19,7 @@ app.get('webhook,',function(req,res){
 	if(req.query['hub.verify_token']==="bluelime"){
 		res.send(req.query['hub.challenge'])
 	}
-	res.send("the token is wrong")
+	res.sen("the token is wrong")
 })
 app.listen(app.get('port'),function(){
 	console.log("filrec a marche")
